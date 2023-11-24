@@ -12,7 +12,6 @@ const { v4: uuid } = require("uuid");
 const { logger } = require("../application/logging.js");
 
 const register = async (request) => {
-    console.log(request);
   const user = validate(registerUserValidation, request);
 
   const countUser = await prismaClient.user.count({
