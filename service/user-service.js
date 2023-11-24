@@ -9,8 +9,10 @@ import { prismaClient } from "../application/database.js";
 import { ResponseError } from "../error/response-error.js";
 import bcrypt from "bcrypt";
 import { v4 as uuid } from "uuid";
+import { logger } from "../application/logging.js";
 
 const register = async (request) => {
+  logger.info(request);
   const user = validate(registerUserValidation, request);
 
   const countUser = await prismaClient.user.count({

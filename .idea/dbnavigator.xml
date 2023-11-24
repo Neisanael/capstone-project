@@ -20,9 +20,7 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="83b3ed8c-25cd-4754-af77-428022b251ec" object-ref="consoles/Connection" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="83b3ed8c-25cd-4754-af77-428022b251ec" dataset="capstone.user" active-filter-id="" />
