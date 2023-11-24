@@ -1,8 +1,7 @@
-import supertest from "supertest";
-import { web } from "../application/web.js";
-import { logger } from "../application/logging.js";
-import { createTestUser, getTestUser, removeTestUser } from "./test-util.js";
-import bcrypt from "bcrypt";
+const supertest = require("supertest");
+const { web } = require("../application/web.js");
+const { createTestUser, getTestUser, removeTestUser } = require("./test-util.js");
+const bcrypt = require("bcrypt");
 
 describe("POST /api/users", function () {
   afterEach(async () => {

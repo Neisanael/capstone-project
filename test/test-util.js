@@ -1,5 +1,5 @@
-import { prismaClient } from "../application/database.js";
-import bcrypt from "bcrypt";
+const { prismaClient } = require("../application/database.js");
+const bcrypt = require("bcrypt");
 
 const removeTestUser = async () => {
   await prismaClient.user.deleteMany({
@@ -28,4 +28,8 @@ const getTestUser = async () => {
   });
 };
 
-export { createTestUser, removeTestUser, getTestUser };
+module.exports = {
+  createTestUser,
+  removeTestUser,
+  getTestUser,
+};

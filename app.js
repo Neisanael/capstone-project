@@ -1,7 +1,10 @@
-import { web } from "./application/web.js";
-import { logger } from "./application/logging.js";
+const web = require("./application/web.js");
+const logger = require("./application/logging.js");
+const express = require('express')
+
+const app = express()
 
 const PORT = process.env.PORT || 8000;
-web.listen(8000, () => {
-  logger.info("Start at port 8000");
+web.listen(PORT, () => {
+  logger.info(`Start at port ${PORT}`);
 });
