@@ -1,4 +1,4 @@
-const { ResponseError } = require("../error/response-error.js");
+const ResponseError = require("../error/response-error.js");
 
 const validate = (schema, request) => {
   const result = schema.validate(request, {

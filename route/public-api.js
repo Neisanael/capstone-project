@@ -10,4 +10,4 @@ publicRouter.get('/', (req, res) => {
     res.send('Silahkan Mencoba!')
 })
 
-module.exports = { publicRouter };
+module.exports = publicRouter;

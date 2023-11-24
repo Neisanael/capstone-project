@@ -76,9 +76,8 @@ describe("POST /api/users/login", function () {
             username: "test",
             password: "12345678",
         });
-        logger.info("Uji Coba");
+
         logger.info(result.body);
-        logger.info("Tutup Uji Coba");
 
         expect(result.status).toBe(200);
         expect(result.body.data).toBeDefined();

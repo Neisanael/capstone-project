@@ -6,10 +6,9 @@ const {
   updateUserValidation,
 } = require("../validation/user-validation.js");
 const { prismaClient } = require("../application/database.js");
-const { ResponseError } = require("../error/response-error.js");
+const ResponseError = require("../error/response-error.js");
 const bcrypt = require("bcrypt");
 const { v4: uuid } = require("uuid");
-const { logger } = require("../application/logging.js");
 
 const register = async (request) => {
   const user = validate(registerUserValidation, request);
