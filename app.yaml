@@ -1,2 +1,4 @@
 runtime: nodejs20
-service: default
+service: backend
+env_variables:
+  DATABASE_URL: "mysql://root:12345678@34.128.82.238/capstone"
